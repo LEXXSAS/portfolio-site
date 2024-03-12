@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <title>Simple Portfolio site</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">Port<span>folio</span></a>
+        <ul class="navbar">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Скилы</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+
+        <div class="header__burger"><span class="burger-span"></span></div>
+        <nav class="header__menu">
+            <div class="bx bx-moon" id="darkmode"></div>
+            <ul class="header__list">
+                <li><a href="#" class="header__link">Главная</a></li>
+                <li><a href="#about" class="header__link">Обо мне</a></li>
+                <li><a href="#skills" class="header__link">Скилы</a></li>
+                <li><a href="#projects" class="header__link">Проекты</a></li>
+                <li><a href="#contact" class="header__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        
+        <div class="social">
+            <a href="#" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-vk"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-telegram"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        </div>
+        <div class="home-img">
+            <img class="element-animation" src="img/bgImv2.png" alt="фотография с эффектом штриха кисти">
+        </div>
+        <div class="home-text element-animation">
+            <span>Привет! <span class="im">Я</span></span>
+            <h1>Джон Доу</h1>
+            <div class="message-wrapper">
+            <h2 class="message"></h2>
+            </div>
+            <p class="p">Прежде чем создавать портфолио, я&nbsp;перебрал множество разных идей, отличающихся сложностью и&nbsp;дизайном. В&nbsp;конечном итоге, остановился на&nbsp;том, что вы&nbsp;видете прямо сейчас. 
+            Лаконичность, адаптивность, легкость и&nbsp;<i>функциональность*</i>, то&nbsp;что отличает сайт от&nbsp;других.</p>
+            <a href="download/Resume.txt" download="Resume" class="btn btn-0" target="_blank">Скачать резюме</a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="heading element-animation">
+            <h2>Обо мне</h2>
+            <span>Introduction</span>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-img">
+                <img class="element-animation" src="img/bgImv2.png" alt="фотография с эффектом штриха кисти">
+            </div>
+
+            <div class="about-text element-animation">
+                <p>
+                    Закончил курсы от&nbsp;Stepik, Archackov и&nbsp;Html academy, прочел книги Эрих Фримен по&nbsp;html, css, javascript. Умею верстать сайты, писать скрипты, использовать Git, рефакторить код.
+                    Имею опыт работы с&nbsp;react, nodejs, bootstrap, tailwind, mysql, figma. 
+                    Продолжаю изучать разработку более углубленно.
+                    Также в&nbsp;будущем планирую изучить php, vue и&nbsp;многое другое.
+                </p>
+                <div class="information">
+                    <div class="info-box">
+                        <i class="bx bxs-user">
+                            <span>John Doe</span>
+                        </i>
+                    </div>
+                    <div class="info-box">
+                        <i class="bx bxs-phone">
+                            <span>+799999999</span>
+                        </i>
+                    </div>
+                    <div class="info-box">
+                        <i class="bx bxs-envelope">
+                            <span>johndoe@mail.ru</span>
+                        </i>
+                    </div>
+                </div>
+                <a href="download/Resume.txt" download="Resume" class="btn btn-0" target="_blank">Скачать резюме</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills" id="skills">
+
+        <div class="heading element-animation">
+            <h2>Скилы</h2>
+            <span>My Skill's</span>
+        </div>
+
+        <div class="skills-container">
+            <div class="bars">
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span id="number-html">0%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span id="number-css">0%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Javascript</h3>
+                    <span id="number-js">0%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span id="number-react">0%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Nodejs</h3>
+                    <span id="number-nodejs">0%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar nodejs-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Sql</h3>
+                    <span id="number-sql">0%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar sql-bar"></div>
+                </div>
+           </div>
+            <div class="skills-img">
+                <img class="element-animation" src="img/qr_email_cat_v1-3.png" alt="qr кот">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+        <div class="heading element-animation">
+            <h2>Проекты</h2>
+            <span>My projects</span>
+        </div>
+
+        <div class="projects-container">
+            <div class="telg element-animation">
+            <img src="img/qr_telegram_one.png" alt="">
+            </div>
+        </div>
+
+        <div class="projects-container swiper mySwiper">
+            <div class="projects-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://lexxsas.github.io/mini_site/" class="projects-box">
+                        <img src="img/mini_site_cover.png" alt="">
+                        <h4>Web</h4>
+                        <div class="project-box__text">
+                        <h3>Mini site</h3>
+                        <p class="flexp">View demo<i class='bx bx-right-arrow-alt'></i></p>
+                       </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://lexxsas.github.io/react_blog" class="projects-box">
+                        <img src="img/reactblog_cover.png" alt="">
+                        <h4>Web</h4>
+                        <div class="project-box__text">
+                        <h3>React blog</h3>
+                        <p class="flexp">View demo<i class='bx bx-right-arrow-alt'></i></p>
+                       </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://1lexxs.ru" class="projects-box">
+                        <img src="img/notesphp_cover.png" alt="">
+                        <h4>Web</h4>
+                        <div class="project-box__text">
+                        <h3>Notes on Php Mysql</h3>
+                        <p class="flexp">View demo<i class='bx bx-right-arrow-alt'></i></p>
+                       </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://nodeserverthree.1lexxs.com/" class="projects-box">
+                        <img src="img/reactmuiradmin-cover.png" alt="">
+                        <h4>Web</h4>
+                        <div class="project-box__text">
+                        <h3>React Mui R-admin</h3>
+                        <p class="flexp">View demo<i class='bx bx-right-arrow-alt'></i></p>
+                       </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://lexxsas.github.io/Remind_me_app/" class="projects-box">
+                        <img src="img/remind_me_up_cover.png" alt="">
+                        <h4>Bootstrap</h4>
+                        <div class="project-box__text">
+                        <h3>Remind me up site</h3>
+                        <p class="flexp">View demo<i class='bx bx-right-arrow-alt'></i></p>
+                       </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://lexxsas.github.io/superherosearch/" class="projects-box">
+                        <img src="img/superhero_search_cover.png" alt="">
+                        <h4>Demo api</h4>
+                        <div class="project-box__text">
+                        <h3>Superhero search</h3>
+                        <p class="flexp">View demo<i class='bx bx-right-arrow-alt'></i></p>
+                       </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://lexxsas.github.io/passwordgen/" class="projects-box">
+                        <img src="img/passwordgen_cover.png" alt="">
+                        <h4>Pet project</h4>
+                        <div class="project-box__text">
+                        <h3>Password generator</h3>
+                        <p class="flexp">View demo<i class='bx bx-right-arrow-alt'></i></p>
+                       </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://lexxsas.github.io/weatherapp/" class="projects-box">
+                        <img src="img/weatherapp_cover.png" alt="">
+                        <h4>Pet project</h4>
+                        <div class="project-box__text">
+                        <h3>Weather App</h3>
+                        <p class="flexp">View demo<i class='bx bx-right-arrow-alt'></i></p>
+                       </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="heading element-animation">
+            <h2>Форма для связи</h2>
+            <span>Connect With Me</span>
+        </div>
+
+        <div class="contact-form">
+            <form id="client" action="" method="">
+                <input type="text" name="user_name" id="" placeholder="Ваше имя" required minlength="2">
+                <input type="email" name="user_email" id="" placeholder="Email" required>
+                <textarea name="user_message" id="textarea" cols="30" rows="10" placeholder="Чем я могу быть Вам полезен?" required></textarea>
+                <input type="submit" id="submit-btn" value="Отправить" class="contact-button"></input>
+            </form>
+        </div>
+
+    </section>
+    <section class="upclick-container">
+    <div class="upClick" id="upClick" style="display: none;">&#9650;</div>
+    </section>
+    <footer>
+        <div class="footer">
+        <h2>Follow me</h2>
+        <div class="footer-social">
+            <a href="#" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-vk"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-telegram"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p><a href="#" class="footer logo">LEXXS_DESIGN</a></p>
+        <p class="footer p">&#169;Все права защищены</p>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/contactform.js"></script>
+    <script src="js/skills.js"></script>
+</body>
+</html>

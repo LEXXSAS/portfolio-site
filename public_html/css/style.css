@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --main-color-1: #033a80;
+  --main-color-2: #00AEEA;
+  --bg-color: #fff;
+  --text-color: #0f0c27;
+  --hover: hsl(260, 100%, 51%);
+  --big-font: 3.2rem;
+  --medium-font: 1.8rem;
+  --p-font: 0.941rem;
+  --logo-span: crimson;
+  --purple-color-1: #ECCEDF;
+  --purple-color-2: #B13B81;
+  --green-color-1: #65947a;
+  --green-color-2: #527560;
+  --green-color-3: #1f3829;
+  --crimson-color-1: #ecced8;
+  --crimson-color-2: #bd587b;
+  --crimson-color-3: #b13b64;
+  --blue-color-1: #E2F2FD;
+  --blue-color-2: #9ACEDE;
+  --blue-color-3: #5FA9BC;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.projects-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--main-color-1);
+  box-shadow: 0px 2px 7px rgba(14 55 54/15%);
+}
+
+.projects-box:hover {
+  background: #02225a;
+}
+
+.projects-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.4rem;
+}
+
+.projects-box:hover h3 {
+  color: var(--blue-color-1);
+}
+
+.projects-box .bx {
+  padding-top: 2rem;
+  font-size: 54px;
+  color: var(--crimson-color-2);
+}
+
+.projects-box:hover .bx {
+  color: var(--crimson-color-2);
+}
+
+.projects a {
+  color: var(--main-color-1);
+  font-size: var(--p-font);
+  font-weight: 500;
+}
+
+.projects-box:hover p {
+  color: var(--main-color-2);
+
+}
+
+.swiper-pagination {
+  background: var(--main-color-1);
+  color: var(--main-color-1);
+}
+
+.swiper-pagination {
+  position: relative;
+  background-color: transparent;
+  top: 0px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--crimson-color-2);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+  transform: translate(0%, -20%);
+  color: var(--main-color-1);
+  opacity: 0.6;
+}
+
+.projects-wrapper {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 910px) {
+  .projects-box {
+    padding: 0;
+  }
+}
+
+@media (max-width: 411px) {
+  .projects-box {
+    padding: 0;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: 0;
+  }
+}

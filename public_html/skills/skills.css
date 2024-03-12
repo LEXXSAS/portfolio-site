@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    background-color: antiquewhite;
+}
+.bars {
+    width: 300px;
+    padding: 10px;
+}
+
+span {
+    display: block;
+}
+
+.bars-box > h3 {
+    padding: 10px 0;
+}
+.html-bar {
+    height: 10px;
+    width: 0%;
+    display: block;
+    background: rgb(199, 145, 145);
+}
+.css-bar {
+    height: 10px;
+    width: 0%;
+    display: block;
+    background: rgb(55, 92, 147);
+}
+.js-bar {
+    height: 10px;
+    width: 0%;
+    display: block;
+    background: rgb(200, 112, 45);
+}
+.react-bar {
+    height: 10px;
+    width: 0%;
+    display: block;
+    background: rgb(200, 112, 45);
+}
+.nodejs-bar {
+    height: 10px;
+    width: 0%;
+    display: block;
+    background: rgb(200, 112, 45);
+}
+.php-bar {
+    height: 10px;
+    width: 0%;
+    display: block;
+    background: rgb(200, 112, 45);
+}
+.sql-bar {
+    height: 10px;
+    width: 0%;
+    display: block;
+    background: rgb(200, 112, 45);
+}
